@@ -23,6 +23,7 @@ export default {
   plugins: [
     resolve(),
     babel({
+      babelHelpers: 'bundled',
       exclude: 'node_modules/**'
     }),
     terser(),
@@ -33,6 +34,7 @@ export default {
           /global/
         ]
       },
+      autoModules: false,
       plugins: [
         autoprefixer({ grid: true }),
         cssnano({ preset: 'default' })

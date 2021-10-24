@@ -1,5 +1,5 @@
 
-const module = function (sceneElement, modConfig, sceneConfig, projectConfig) {
+const module = function (sceneElement, modConfig, sceneConfig) {
   console.log('do something with this scene:', sceneConfig)
 }
 

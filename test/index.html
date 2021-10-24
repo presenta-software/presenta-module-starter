@@ -7,12 +7,13 @@
     <script src="../dist/presenta-module-starter.min.js"></script>
 </head>
 <body>
-    open the console
+    <div class="scene"></div>
     <script>
-        var scene = {
-            blocks:[{type: 'text'}]
+        var modConfig = {}
+        var sceneConfig = {
+            blocks:[]
         }
-        new PresentaModuleStarter(null, null, scene)
+        new PresentaModuleStarter(document.querySelector('.scene'), modConfig, sceneConfig)
         console.log(scene)
     </script>
 </body>
